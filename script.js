@@ -44,6 +44,7 @@ const data = {
     }
   },
 
+  
   past: {
     gebiet: {
       text: "1975 war Deutschland in zwei Staaten geteilt: die Bundesrepublik Deutschland (Westen) und die DDR (Osten).",
