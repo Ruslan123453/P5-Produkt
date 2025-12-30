@@ -4,32 +4,31 @@ const data = {
   today: {
     gebiet: {
       text: "",
-      img: "images/today/karte.webp"
+      img: "./images/today/karte.webp"
     },
-    währung: {
+    waehrung: {
       text: "",
-      img: "images/today/währung.jpg"
+      img: "./images/today/waehrung.jpg"
     },
-    
     schule: {
       text: "Digitale Medien, Tablets und moderne Unterrichtsmethoden.",
-      img: "images/today/schulen.jpg"
+      img: "./images/today/schulen.jpg"
     },
     arbeit: {
       text: "Viele Berufe sind digital, Homeoffice ist verbreitet.",
-      img: "images/today/arbeit.jpg"
+      img: "./images/today/arbeit.jpg"
     },
     freizeit: {
       text: "Streaming, Social Media und Gaming.",
-      img: "images/today/freizeit.jpeg"
+      img: "./images/today/freizeit.jpeg"
     },
     familie: {
       text: "Viele verschiedene Familienmodelle.",
-      img: "images/today/familie.jpg"
+      img: "./images/today/familie.jpg"
     },
     technik: {
       text: "Smartphones, Internet und KI.",
-      img: "images/today/technik.jpg"
+      img: "./images/today/technik.jpg"
     },
     kleidung: {
       text: "Individuell, modisch und schnelllebig.",
@@ -39,10 +38,6 @@ const data = {
       text: "Moderne Diagnostik und Behandlung.",
       img: ""
     },
-    stadtland: {
-      text: "Große Unterschiede zwischen Stadt und Land.",
-      img: ""
-    },
     traeume: {
       text: "Karriere, Reisen und Selbstverwirklichung.",
       img: ""
@@ -50,33 +45,33 @@ const data = {
   },
 
   past: {
-    währung: {
+    waehrung: {
       text: "",
-      img: "images/past/währung.jpg"
+      img: "./images/past/waehrung.jpg"
     },
     gebiet: {
       text: "",
-      img: "images/past/karte.png"
+      img: "./images/past/karte.png"
     },
     schule: {
       text: "Strenger Unterricht ohne digitale Technik.",
-      img: "images/past/schulen.jpg"
+      img: "./images/past/schulen.jpg"
     },
     arbeit: {
       text: "Industrie, Handwerk und Fabrikarbeit.",
-      img: "images/past/arbeit.jpg"
+      img: "./images/past/arbeit.jpg"
     },
     freizeit: {
       text: "Fernsehen, Radio und Vereine.",
-      img: "images/past/freizeit2.webp"
+      img: "./images/past/freizeit2.webp"
     },
     familie: {
       text: "Klassische Rollenverteilung.",
-      img: "images/past/familie.jpg"
+      img: "./images/past/familie.jpg"
     },
     technik: {
       text: "Kaum Elektronik, kein Internet.",
-      img: "images/past/technik.jpg"
+      img: "./images/past/technik.jpg"
     },
     kleidung: {
       text: "Praktisch und langlebig.",
@@ -84,10 +79,6 @@ const data = {
     },
     medizin: {
       text: "Weniger Technik, längere Heilung.",
-      img: ""
-    },
-    stadtland: {
-      text: "Einfaches Leben, wenig Infrastruktur.",
       img: ""
     },
     traeume: {
