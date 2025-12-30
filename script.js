@@ -32,7 +32,7 @@ const data = {
     },
     kleidung: {
       text: "Individuell, modisch und schnelllebig.",
-      img: ""
+      img: "./images/today/kleidung.jpg"
     },
     medizin: {
       text: "Moderne Diagnostik und Behandlung.",
@@ -75,7 +75,7 @@ const data = {
     },
     kleidung: {
       text: "Praktisch und langlebig.",
-      img: ""
+      img: "./images/past/kleidung.jpg"
     },
     medizin: {
       text: "Weniger Technik, längere Heilung.",
