@@ -55,7 +55,7 @@ const data = {
     },
     schule: {
       text: "Strenger Unterricht ohne digitale Technik.",
-      img: "./images/past/schulen.jpg"
+      img: "./images/past/schule.jpg"
     },
     arbeit: {
       text: "Industrie, Handwerk und Fabrikarbeit.",
