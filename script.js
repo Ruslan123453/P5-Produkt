@@ -4,32 +4,32 @@ const data = {
   today: {
     gebiet: {
       text: "",
-      img: "/images/today/Karte von Deutschland.webp"
+      img: "/images/today/karte.webp"
     },
     währung: {
       text: "",
-      img: "/images/today/Währung.jpg"
+      img: "/images/today/währung.jpg"
     },
     
     schule: {
       text: "Digitale Medien, Tablets und moderne Unterrichtsmethoden.",
-      img: "/images/today/Schulen.jpg"
+      img: "/images/today/schulen.jpg"
     },
     arbeit: {
       text: "Viele Berufe sind digital, Homeoffice ist verbreitet.",
-      img: "/images/today/Arbeit.jpg"
+      img: "/images/today/arbeit.jpg"
     },
     freizeit: {
       text: "Streaming, Social Media und Gaming.",
-      img: "/images/today/Freizeit.jpeg"
+      img: "/images/today/freizeit.jpeg"
     },
     familie: {
       text: "Viele verschiedene Familienmodelle.",
-      img: "/images/today/Familie.jpg"
+      img: "/images/today/familie.jpg"
     },
     technik: {
       text: "Smartphones, Internet und KI.",
-      img: "/images/today/Technik.jpg"
+      img: "/images/today/technik.jpg"
     },
     kleidung: {
       text: "Individuell, modisch und schnelllebig.",
@@ -52,31 +52,31 @@ const data = {
   past: {
     währung: {
       text: "",
-      img: "/images/past/Währung.jpg"
+      img: "/images/past/währung.jpg"
     },
     gebiet: {
       text: "",
-      img: "/images/past/Karte von Deutschland.png"
+      img: "/images/past/karte.png"
     },
     schule: {
       text: "Strenger Unterricht ohne digitale Technik.",
-      img: "/images/past/Schulen.jpg"
+      img: "/images/past/schulen.jpg"
     },
     arbeit: {
       text: "Industrie, Handwerk und Fabrikarbeit.",
-      img: "/images/past/Arbeit.jpg"
+      img: "/images/past/arbeit.jpg"
     },
     freizeit: {
       text: "Fernsehen, Radio und Vereine.",
-      img: "/images/past//Freizeit2.webp"
+      img: "/images/past/freizeit2.webp"
     },
     familie: {
       text: "Klassische Rollenverteilung.",
-      img: "/images/past/Familie.jpg"
+      img: "/images/past/familie.jpg"
     },
     technik: {
       text: "Kaum Elektronik, kein Internet.",
-      img: "/images/past/Technik.jpg"
+      img: "/images/past/technik.jpg"
     },
     kleidung: {
       text: "Praktisch und langlebig.",
