@@ -45,13 +45,13 @@ const data = {
   },
 
   past: {
-    waehrung: {
-      text: "",
-      img: "./images/past/waehrung.jpg"
-    },
     gebiet: {
       text: "",
       img: "./images/past/karte.png"
+    },
+    waehrung: {
+      text: "",
+      img: "./images/past/waehrung.jpg"
     },
     schule: {
       text: "Strenger Unterricht ohne digitale Technik.",
