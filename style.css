@@ -91,13 +91,19 @@ header {
   margin: 30px auto;
 }
 
+
 .topic {
   background: var(--card);
-  padding: 20px;
-  text-align: center;
-  border-radius: 16px;
+  padding: 26px 20px;
+  border-radius: 20px;
   cursor: pointer;
-  transition: 0.25s;
+  min-height: 80px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  white-space: nowrap; 
 }
 
 .topic:hover {
@@ -122,12 +128,16 @@ header {
 }
 
 .back {
-  margin-top: 30px;
-  padding: 10px 18px;
+  margin-top: 40px;
+  padding: 16px 28px;        /* больше */
   border: none;
-  border-radius: 12px;
+  border-radius: 18px;
   background: var(--card);
   cursor: pointer;
+  min-height: 64px;          /* важно для iPad */
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text);
 }
 
 /* ANIMATION */
