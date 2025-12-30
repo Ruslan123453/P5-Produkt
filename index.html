@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leben heute und vor 50 Jahren</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Leben im Vergleich</h1>
+  <button id="themeToggle">🌙</button>
+</header>
+
+<!-- START -->
+<section id="start" class="screen active">
+  <div class="hero">
+    <h2>Ein Leben.<br>Zwei Zeiten.</h2>
+    <p>Wie hat sich das Leben in Deutschland verändert?</p>
+
+    <div class="era-select">
+      <div class="era-card" onclick="setEra('today')">
+        <h3>Heute</h3>
+        <span>Modern · Digital · Schnell</span>
+      </div>
+      <div class="era-card" onclick="setEra('past')">
+        <h3>1975</h3>
+        <span>Analog · Geteilt · Einfach</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THEMEN -->
+<section id="topics" class="screen">
+  <h2 id="topicsTitle">Themen des Alltags</h2>
+
+  <div class="topics-grid">
+    <div class="topic" onclick="openTopic('gebiet')">Gebiet</div>
+    <div class="topic" onclick="openTopic('währung')">Währung</div>
+    <div class="topic" onclick="openTopic('schule')">Schule</div>
+    <div class="topic" onclick="openTopic('arbeit')">Arbeit</div>
+    <div class="topic" onclick="openTopic('freizeit')">Freizeit</div>
+    <div class="topic" onclick="openTopic('familie')">Familie</div>
+    <div class="topic" onclick="openTopic('technik')">Technik</div>
+    <div class="topic" onclick="openTopic('kleidung')">Kleidung</div>
+    <div class="topic" onclick="openTopic('medizin')">Medizin</div>
+    <!-- <div class="topic" onclick="openTopic('stadtland')">Stadt & Land</div> -->
+    <div class="topic" onclick="openTopic('traeume')">Träume</div>
+  </div>
+
+  <button class="back" onclick="goStart()">← Epoche wechseln</button>
+</section>
+
+<!-- CONTENT -->
+<section id="content" class="screen">
+  <h2 id="contentTitle"></h2>
+  <img id="contentImage" alt="">
+  <p id="contentText"></p>
+
+  <button class="back" onclick="goTopics()">← Zurück</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

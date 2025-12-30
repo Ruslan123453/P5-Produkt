@@ -1,0 +1,137 @@
+:root {
+  --bg: #f4f4f4;
+  --text: #111;
+  --card: #ffffff;
+  --accent: #2563eb;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #f5f5f5;
+  --card: #1e1e1e;
+  --accent: #f59e0b;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.4s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+}
+
+#themeToggle {
+  border: none;
+  background: var(--card);
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* SCREENS */
+.screen {
+  display: none;
+  padding: 40px 20px;
+}
+
+.screen.active {
+  display: block;
+  animation: fadeIn 0.6s ease;
+}
+
+/* START */
+.hero {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 42px;
+}
+
+.era-select {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.era-card {
+  background: var(--card);
+  padding: 30px;
+  width: 260px;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.era-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* TOPICS */
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 18px;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.topic {
+  background: var(--card);
+  padding: 20px;
+  text-align: center;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.topic:hover {
+  background: var(--accent);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* CONTENT */
+#content {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+#content img {
+  width: 100%;
+  max-width: 500px;
+  margin: 25px 0;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.back {
+  margin-top: 30px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  background: var(--card);
+  cursor: pointer;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
