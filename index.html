@@ -13,7 +13,6 @@
   <button id="themeToggle">🌙</button>
 </header>
 
-<!-- START -->
 <section id="start" class="screen active">
   <div class="hero">
     <h2>Ein Leben.<br>Zwei Zeiten.</h2>
@@ -32,11 +31,10 @@
   </div>
 </section>
 
-<!-- THEMEN -->
 <section id="topics" class="screen">
-  <h2 id="topicsTitle">Themen des Alltags</h2>
+  <h2>Themen des Alltags</h2>
 
-<div class="topics-grid">
+  <div class="topics-grid">
     <div class="topic" onclick="openTopic('gebiet')">🏳️ Gebiet</div>
     <div class="topic" onclick="openTopic('waehrung')">💶 Währung</div>
     <div class="topic" onclick="openTopic('schule')">🏫 Schule</div>
@@ -48,17 +46,27 @@
     <div class="topic" onclick="openTopic('medizin')">🏥 Medizin</div>
     <div class="topic" onclick="openTopic('traeume')">💭 Träume</div>
   </div>
+
   <button class="back" onclick="goStart()">← Epoche wechseln</button>
 </section>
 
-<!-- CONTENT -->
 <section id="content" class="screen">
   <h2 id="contentTitle"></h2>
-  <img id="contentImage" alt="">
+  <img id="contentImage">
   <h4 id="contentText"></h4>
 
+  <button id="surveyBtn" class="back" onclick="openSurvey()">Ergebnisse der Umfrage</button>
   <button class="back" onclick="goTopics()">← Zurück</button>
 </section>
+
+<!-- MODAL -->
+<div id="surveyModal" class="modal">
+  <div class="modal-content">
+    <h3 id="surveyQuestion"></h3>
+    <div id="surveyAnswers"></div>
+    <button class="back" onclick="closeSurvey()">Schließen</button>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
