@@ -165,4 +165,8 @@ header {
   max-height:80vh;
   overflow-y:auto;
 }
-.answer{margin-bottom:10px;text-align:left;}
+.answer {
+  margin-bottom: 12px;
+  text-align: left;
+  font-size: 18px;
+}

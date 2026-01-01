@@ -1,4 +1,5 @@
 let era = "today";
+let currentTopic = "";
 
 const data = {
   today: {
@@ -87,24 +88,24 @@ const data = {
   }
 };
 
-// ✅ Опросы для всех тем, кроме Gebiet и Währung
+// ================== Опросы ==================
 const surveys = {
   schule: {
     today: {
       question: "Wie sieht dein Schulalltag heute aus?",
       answers: [
-        "Anna (21): Ich lerne viel mit Tablets und digitalen Aufgaben.",
-        "Lukas (22): Gruppenarbeiten und Präsentationen gehören zum Alltag.",
-        "Mia (24): Schule ist modern, aber manchmal stressig."
+        "Anna (21): Ich lerne täglich mit Tablets und digitalen Tools, das erleichtert das Arbeiten sehr.",
+        "Lukas (22): Gruppenarbeit und Präsentationen sind fest im Stundenplan verankert, oft spannend aber auch stressig.",
+        "Mia (24): Moderne Schule ist abwechslungsreich, wir nutzen oft Apps und Online-Plattformen."
       ]
     },
     past: {
       question: "Wie sah dein Schulalltag 1975 aus?",
       answers: [
-        "Peter (72): Strenger Frontalunterricht ohne Technik.",
-        "Ursula (69): Schule endete meist mittags.",
-        "Karl (74): Disziplin war sehr wichtig.",
-        "Helga (70): Hausaufgaben mussten immer gemacht werden."
+        "Peter (72): Wir hatten strengen Frontalunterricht, alles war analog und Disziplin stand an erster Stelle.",
+        "Ursula (69): Schule endete meist mittags, danach erledigten wir Hausaufgaben und halfen zu Hause.",
+        "Karl (74): Noten und Ordnung waren sehr wichtig, Technik gab es kaum, alles in Heften.",
+        "Helga (70): Hausaufgaben waren Pflicht und das Lernen erfolgte ausschließlich aus Büchern."
       ]
     }
   },
@@ -112,18 +113,18 @@ const surveys = {
     today: {
       question: "Wie sieht Arbeit heute aus?",
       answers: [
-        "Jonas (23): Ich arbeite häufig im Homeoffice.",
-        "Lea (25): Computer und Internet gehören zu jedem Job.",
-        "Tim (21): Flexible Arbeitszeiten sind sehr praktisch."
+        "Jonas (23): Ich arbeite oft flexibel und nutze digitale Tools für Kommunikation und Organisation.",
+        "Lea (25): Homeoffice und Remote-Arbeit sind Alltag, Emails und Cloudlösungen sind ständig im Einsatz.",
+        "Tim (21): Flexible Arbeitszeiten geben mir Freiheit, wir nutzen viele Softwarelösungen."
       ]
     },
     past: {
       question: "Wie war Arbeit 1975?",
       answers: [
-        "Hans (73): Ich arbeitete jeden Tag in der Fabrik.",
-        "Monika (71): Die Arbeit war körperlich anstrengend.",
-        "Rolf (75): Man blieb oft sein Leben lang in einem Job.",
-        "Ingrid (70): Sicherheit war wichtiger als Spaß an der Arbeit."
+        "Hans (73): Ich arbeitete täglich in der Fabrik, feste Schichten und körperlich harte Arbeit.",
+        "Monika (71): Büroarbeit war wenig digital, alles handschriftlich, sehr diszipliniert.",
+        "Rolf (75): Meist ein Job ein Leben lang, Sicherheit war wichtiger als Kreativität.",
+        "Ingrid (70): Struktur und Pünktlichkeit dominierten den Arbeitsalltag."
       ]
     }
   },
@@ -131,18 +132,18 @@ const surveys = {
     today: {
       question: "Wie verbringen junge Menschen ihre Freizeit heute?",
       answers: [
-        "Sophie (22): Ich nutze Social Media und Streamingdienste.",
-        "Ben (24): Gaming ist mein Haupthobby.",
-        "Laura (21): Reisen und Freunde treffen sind wichtig."
+        "Sophie (22): Ich streame Serien, treffe Freunde online und tausche mich in Social Media aus.",
+        "Ben (24): Gaming ist mein Haupthobby, wir spielen regelmäßig zusammen online.",
+        "Laura (21): Sport, Reisen und Treffen mit Freunden stehen im Vordergrund."
       ]
     },
     past: {
       question: "Wie verbrachten Menschen 1975 ihre Freizeit?",
       answers: [
-        "Dieter (74): Wir trafen uns oft mit Freunden.",
-        "Brigitte (71): Fernsehen und Radio waren beliebt.",
-        "Klaus (76): Vereine spielten eine große Rolle.",
-        "Renate (70): Freizeit war einfach, aber schön."
+        "Dieter (74): Wir trafen uns oft mit Freunden und spielten Brettspiele.",
+        "Brigitte (71): Fernsehen und Radio waren Hauptunterhaltung, Vereine waren wichtig.",
+        "Klaus (76): Vereinsleben und Nachbarschaftstreffen bestimmten Freizeit.",
+        "Renate (70): Einfach, aber wir hatten gemeinsame Zeit und Aktivitäten."
       ]
     }
   },
@@ -150,18 +151,18 @@ const surveys = {
     today: {
       question: "Wie sieht Familie heute aus?",
       answers: [
-        "Marie (23): Ich lebe in einer Patchwork-Familie.",
-        "Paul (24): Meine Familie ist sehr modern.",
-        "Nina (21): Familienmodelle sind heute sehr vielfältig."
+        "Marie (23): Wir leben in modernen Patchwork-Familien, jeder unterstützt sich gegenseitig.",
+        "Paul (24): Gleichberechtigung ist normal, Kinderbetreuung wird geteilt.",
+        "Nina (21): Familienmodelle sind sehr vielfältig, jeder gestaltet Alltag individuell."
       ]
     },
     past: {
       question: "Wie war Familie 1975?",
       answers: [
-        "Gerhard (72): Klassische Rollenverteilung üblich.",
-        "Hilde (71): Frauen kümmerten sich um Haus und Kinder.",
-        "Fritz (75): Männer gingen arbeiten, Frauen blieben zuhause.",
-        "Ilse (70): Die Familie war sehr hierarchisch organisiert."
+        "Gerhard (72): Männer gingen arbeiten, Frauen waren zu Hause, klare Rollenverteilung.",
+        "Hilde (71): Hausarbeit und Kindererziehung lagen bei Frauen, Sicherheit stand im Vordergrund.",
+        "Fritz (75): Familienleben streng hierarchisch, gemeinsames Abendessen war Pflicht.",
+        "Ilse (70): Traditionelle Werte bestimmten den Alltag, Freizeit war familienorientiert."
       ]
     }
   },
@@ -169,18 +170,18 @@ const surveys = {
     today: {
       question: "Welche Technik nutzt man heute?",
       answers: [
-        "Tom (22): Ich nutze täglich Smartphone und Internet.",
-        "Eva (24): KI und digitale Tools gehören zu meinem Alltag.",
-        "Lena (21): Technik erleichtert viele Aufgaben."
+        "Tom (22): Smartphones, Internet und digitale Tools sind aus meinem Alltag nicht wegzudenken.",
+        "Eva (24): Künstliche Intelligenz und Apps erleichtern viele Aufgaben.",
+        "Lena (21): Technik vereinfacht Organisation, Lernen und Kommunikation enorm."
       ]
     },
     past: {
       question: "Welche Technik gab es 1975?",
       answers: [
-        "Karl (72): Es gab kaum Elektronik.",
-        "Renate (70): Keine Computer, alles analog.",
-        "Heinz (75): Technik war robust und langlebig.",
-        "Ursula (69): Telefon war selten zuhause."
+        "Karl (72): Kaum Elektronik, alles war analog.",
+        "Renate (70): Telefon nur selten zuhause, Computer gab es nicht.",
+        "Heinz (75): Geräte waren mechanisch und langlebig, wenig Komfort.",
+        "Ursula (69): Radio und Fernseher waren die Highlights, sonst kaum Technik."
       ]
     }
   },
@@ -188,18 +189,18 @@ const surveys = {
     today: {
       question: "Wie kleiden sich Menschen heute?",
       answers: [
-        "Sina (21): Mode ist individuell und trendbewusst.",
-        "Max (23): Ich folge aktuellen Modetrends.",
-        "Laura (25): Kleidung wird oft neu gekauft und experimentell kombiniert."
+        "Sina (21): Mode ist Ausdruck der Persönlichkeit, oft individuell und experimentell.",
+        "Max (23): Aktuelle Trends beeinflussen meinen Stil stark.",
+        "Laura (25): Kleidung kaufe ich gezielt und kombiniere kreativ."
       ]
     },
     past: {
       question: "Wie kleideten sich Menschen 1975?",
       answers: [
-        "Peter (72): Kleidung war praktisch und robust.",
-        "Monika (71): Man trug Sachen lange.",
-        "Klaus (74): Reparaturen waren üblich.",
-        "Ingrid (70): Kleidung war schlicht und funktional."
+        "Peter (72): Kleidung war robust und praktisch, oft repariert.",
+        "Monika (71): Man trug lange dieselben Kleidungsstücke.",
+        "Klaus (74): Kleidung wurde repariert, bevor neue gekauft wurde.",
+        "Ingrid (70): Schlicht und funktional war das Motto."
       ]
     }
   },
@@ -207,18 +208,18 @@ const surveys = {
     today: {
       question: "Wie sieht Medizin heute aus?",
       answers: [
-        "Anna (21): Hightech-Geräte und digitale Diagnostik.",
-        "Lukas (23): Moderne Behandlungsmethoden.",
-        "Mia (25): Medizin ist schneller und effizienter."
+        "Anna (21): Hightech-Geräte, schnelle Diagnostik und digitale Lösungen.",
+        "Lukas (23): Behandlungsmethoden sind präzise und effizient.",
+        "Mia (25): Medizin ist moderner, schneller und patientenfreundlicher."
       ]
     },
     past: {
       question: "Wie war Medizin 1975?",
       answers: [
-        "Peter (72): Weniger Geräte, längere Heilung.",
-        "Ursula (70): Behandlung war einfacher.",
-        "Karl (74): Medizin war langsamer, aber zuverlässig.",
-        "Helga (69): Manchmal musste man Geduld haben."
+        "Peter (72): Weniger Geräte, Heilung dauerte länger, alles war einfacher.",
+        "Ursula (70): Arztbesuche waren selten, Medikamente limitiert.",
+        "Karl (74): Medizin war zuverlässig, aber langsamer.",
+        "Helga (69): Geduld war oft das wichtigste bei Krankheiten."
       ]
     }
   },
@@ -226,18 +227,18 @@ const surveys = {
     today: {
       question: "Welche Träume haben junge Menschen heute?",
       answers: [
-        "Sophie (22): Karriere, Reisen, Selbstverwirklichung.",
-        "Ben (24): Ein gutes Leben und Freiheit.",
-        "Laura (21): Erfolg und persönliche Entwicklung."
+        "Sophie (22): Karriere, Reisen und Selbstverwirklichung.",
+        "Ben (24): Freiheit, Erfolg und gutes Leben.",
+        "Laura (21): Persönliche Entwicklung und Abenteuer."
       ]
     },
     past: {
       question: "Welche Träume hatten Menschen 1975?",
       answers: [
-        "Dieter (74): Sicherheit und Familie.",
-        "Brigitte (71): Einen festen Job.",
-        "Klaus (75): Ein ruhiges Leben.",
-        "Renate (70): Gesundheit und Stabilität."
+        "Dieter (74): Sicherheit und Familie im Vordergrund.",
+        "Brigitte (71): Ein fester Job und Stabilität.",
+        "Klaus (75): Ruhiges Leben und Verlässlichkeit.",
+        "Renate (70): Gesundheit und soziale Absicherung."
       ]
     }
   }
@@ -260,42 +261,18 @@ function openTopic(topic) {
   document.getElementById("contentText").innerText = data[era][topic].text;
   document.getElementById("contentImage").src = data[era][topic].img;
 
-  // Добавляем кнопку опроса
-  if (topic !== "gebiet" && topic !== "waehrung") {
-    if (!document.getElementById("surveyBtn")) {
-      let btn = document.createElement("button");
-      btn.id = "surveyBtn";
-      btn.className = "back";
-      btn.innerText = "Ergebnisse der Umfrage";
-      btn.onclick = openSurvey;
-      document.getElementById("content").appendChild(btn);
-    } else {
-      document.getElementById("surveyBtn").style.display = "inline-block";
-    }
+  const surveyBtn = document.getElementById("surveyBtn");
+  if (topic === "gebiet" || topic === "waehrung") {
+    surveyBtn.style.display = "none";
+  } else {
+    surveyBtn.style.display = "inline-block";
   }
 
   show("content");
 }
 
-// ================== Опрос ==================
 function openSurvey() {
   const s = surveys[currentTopic][era];
-  
-  // Создаём модальное окно, если ещё нет
-  if (!document.getElementById("surveyModal")) {
-    const modal = document.createElement("div");
-    modal.id = "surveyModal";
-    modal.className = "modal";
-    modal.innerHTML = `
-      <div class="modal-content">
-        <h3 id="surveyQuestion"></h3>
-        <div id="surveyAnswers"></div>
-        <button class="back" onclick="closeSurvey()">Schließen</button>
-      </div>
-    `;
-    document.body.appendChild(modal);
-  }
-
   document.getElementById("surveyQuestion").innerText = s.question;
   document.getElementById("surveyAnswers").innerHTML = s.answers.map(a => `<div class="answer">${a}</div>`).join("");
   document.getElementById("surveyModal").classList.add("active");
@@ -309,7 +286,6 @@ function closeSurvey() {
 function goStart() { show("start"); }
 function goTopics() { show("topics"); }
 
-// ================== Тема ==================
 document.getElementById("themeToggle").onclick = () => {
   document.body.classList.toggle("dark");
 };
