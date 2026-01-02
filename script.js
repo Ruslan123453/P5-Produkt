@@ -94,151 +94,158 @@ const surveys = {
     today: {
       question: "Wie sieht dein Schulalltag heute aus?",
       answers: [
-        "Anna (21): Ich lerne täglich mit Tablets und digitalen Tools, das erleichtert das Arbeiten sehr.",
-        "Lukas (22): Gruppenarbeit und Präsentationen sind fest im Stundenplan verankert, oft spannend aber auch stressig.",
-        "Mia (24): Moderne Schule ist abwechslungsreich, wir nutzen oft Apps und Online-Plattformen."
+        "Anna (22): Fast alles läuft digital. Wir arbeiten viel mit Tablets und Online-Plattformen, das ist praktisch, aber manchmal auch anstrengend.",
+        "Lukas (23): Wir machen viele Gruppenarbeiten und Präsentationen. Das ist abwechslungsreich, aber der Leistungsdruck ist schon hoch.",
+        "Mia (21): Kein Tag ist gleich. Mal Apps, mal Diskussionen – langweilig ist es selten."
       ]
     },
     past: {
       question: "Wie sah dein Schulalltag 1975 aus?",
       answers: [
-        "Peter (72): Wir hatten strengen Frontalunterricht, alles war analog und Disziplin stand an erster Stelle.",
-        "Ursula (69): Schule endete meist mittags, danach erledigten wir Hausaufgaben und halfen zu Hause.",
-        "Karl (74): Noten und Ordnung waren sehr wichtig, Technik gab es kaum, alles in Heften.",
-        "Helga (70): Hausaufgaben waren Pflicht und das Lernen erfolgte ausschließlich aus Büchern."
+        "Peter (72): Der Lehrer stand vorne und wir hörten zu. Fragen stellte man eher selten.",
+        "Ursula (70): Wir schrieben alles mit der Hand, Hefte mussten ordentlich sein.",
+        "Karl (74): Disziplin war extrem wichtig, Fehler wurden sofort angesprochen.",
+        "Helga (69): Hausaufgaben gehörten einfach dazu, Ausreden gab es nicht."
       ]
     }
   },
+
   arbeit: {
     today: {
       question: "Wie sieht Arbeit heute aus?",
       answers: [
-        "Jonas (23): Ich arbeite oft flexibel und nutze digitale Tools für Kommunikation und Organisation.",
-        "Lea (25): Homeoffice und Remote-Arbeit sind Alltag, Emails und Cloudlösungen sind ständig im Einsatz.",
-        "Tim (21): Flexible Arbeitszeiten geben mir Freiheit, wir nutzen viele Softwarelösungen."
+        "Anna (22): Ich kann meine Arbeitszeit oft flexibel einteilen, das gibt mir Freiheit.",
+        "Lukas (23): Viele Meetings laufen online, manchmal sieht man Kollegen tagelang nicht persönlich.",
+        "Mia (21): Arbeit soll für mich Sinn machen, nicht nur Geld bringen."
       ]
     },
     past: {
       question: "Wie war Arbeit 1975?",
       answers: [
-        "Hans (73): Ich arbeitete täglich in der Fabrik, feste Schichten und körperlich harte Arbeit.",
-        "Monika (71): Büroarbeit war wenig digital, alles handschriftlich, sehr diszipliniert.",
-        "Rolf (75): Meist ein Job ein Leben lang, Sicherheit war wichtiger als Kreativität.",
-        "Ingrid (70): Struktur und Pünktlichkeit dominierten den Arbeitsalltag."
+        "Peter (72): Ich hatte feste Schichten und musste jeden Tag pünktlich sein.",
+        "Ursula (70): Im Büro wurde alles per Hand geschrieben, Computer kannten wir nicht.",
+        "Karl (74): Man suchte sich einen Job und blieb meistens bis zur Rente.",
+        "Helga (69): Der Chef hatte das letzte Wort, Diskussionen waren unüblich."
       ]
     }
   },
+
   freizeit: {
     today: {
       question: "Wie verbringen junge Menschen ihre Freizeit heute?",
       answers: [
-        "Sophie (22): Ich streame Serien, treffe Freunde online und tausche mich in Social Media aus.",
-        "Ben (24): Gaming ist mein Haupthobby, wir spielen regelmäßig zusammen online.",
-        "Laura (21): Sport, Reisen und Treffen mit Freunden stehen im Vordergrund."
+        "Anna (22): Abends schaue ich oft Serien oder treffe Freunde, manchmal auch online.",
+        "Lukas (23): Gaming gehört für mich dazu, vor allem mit Freunden aus verschiedenen Städten.",
+        "Mia (21): Ich bin gern unterwegs, mache Sport oder plane Reisen."
       ]
     },
     past: {
       question: "Wie verbrachten Menschen 1975 ihre Freizeit?",
       answers: [
-        "Dieter (74): Wir trafen uns oft mit Freunden und spielten Brettspiele.",
-        "Brigitte (71): Fernsehen und Radio waren Hauptunterhaltung, Vereine waren wichtig.",
-        "Klaus (76): Vereinsleben und Nachbarschaftstreffen bestimmten Freizeit.",
-        "Renate (70): Einfach, aber wir hatten gemeinsame Zeit und Aktivitäten."
+        "Peter (72): Wir trafen uns draußen oder bei Freunden, oft ganz spontan.",
+        "Ursula (70): Fernsehen war etwas Besonderes, nicht so selbstverständlich wie heute.",
+        "Karl (74): Vereine spielten eine große Rolle, man kannte fast jeden.",
+        "Helga (69): Freizeit war einfacher, aber man hatte mehr echte Gespräche."
       ]
     }
   },
+
   familie: {
     today: {
       question: "Wie sieht Familie heute aus?",
       answers: [
-        "Marie (23): Wir leben in modernen Patchwork-Familien, jeder unterstützt sich gegenseitig.",
-        "Paul (24): Gleichberechtigung ist normal, Kinderbetreuung wird geteilt.",
-        "Nina (21): Familienmodelle sind sehr vielfältig, jeder gestaltet Alltag individuell."
+        "Anna (22): Familie kann ganz unterschiedlich aussehen, das finde ich gut.",
+        "Lukas (23): Aufgaben werden meist geteilt, niemand hat eine feste Rolle.",
+        "Mia (21): Wichtig ist, dass man sich unterstützt, egal in welchem Modell."
       ]
     },
     past: {
       question: "Wie war Familie 1975?",
       answers: [
-        "Gerhard (72): Männer gingen arbeiten, Frauen waren zu Hause, klare Rollenverteilung.",
-        "Hilde (71): Hausarbeit und Kindererziehung lagen bei Frauen, Sicherheit stand im Vordergrund.",
-        "Fritz (75): Familienleben streng hierarchisch, gemeinsames Abendessen war Pflicht.",
-        "Ilse (70): Traditionelle Werte bestimmten den Alltag, Freizeit war familienorientiert."
+        "Peter (72): Mein Vater arbeitete, meine Mutter war zu Hause – das war normal.",
+        "Ursula (70): Hausarbeit und Kinder lagen fast komplett bei den Frauen.",
+        "Karl (74): Entscheidungen traf meistens der Vater.",
+        "Helga (69): Gemeinsame Mahlzeiten waren Pflicht und sehr wichtig."
       ]
     }
   },
+
   technik: {
     today: {
       question: "Welche Technik nutzt man heute?",
       answers: [
-        "Tom (22): Smartphones, Internet und digitale Tools sind aus meinem Alltag nicht wegzudenken.",
-        "Eva (24): Künstliche Intelligenz und Apps erleichtern viele Aufgaben.",
-        "Lena (21): Technik vereinfacht Organisation, Lernen und Kommunikation enorm."
+        "Anna (22): Ohne Smartphone geht eigentlich nichts mehr.",
+        "Lukas (23): Ich organisiere fast alles digital – Termine, Arbeit, Lernen.",
+        "Mia (21): Technik spart Zeit, aber man ist ständig erreichbar."
       ]
     },
     past: {
       question: "Welche Technik gab es 1975?",
       answers: [
-        "Karl (72): Kaum Elektronik, alles war analog.",
-        "Renate (70): Telefon nur selten zuhause, Computer gab es nicht.",
-        "Heinz (75): Geräte waren mechanisch und langlebig, wenig Komfort.",
-        "Ursula (69): Radio und Fernseher waren die Highlights, sonst kaum Technik."
+        "Peter (72): Technik spielte kaum eine Rolle in unserem Alltag.",
+        "Ursula (70): Ein Telefon zu Hause war nicht selbstverständlich.",
+        "Karl (74): Geräte waren einfach, aber hielten ewig.",
+        "Helga (69): Fernsehen und Radio waren die wichtigsten Medien."
       ]
     }
   },
+
   kleidung: {
     today: {
       question: "Wie kleiden sich Menschen heute?",
       answers: [
-        "Sina (21): Mode ist Ausdruck der Persönlichkeit, oft individuell und experimentell.",
-        "Max (23): Aktuelle Trends beeinflussen meinen Stil stark.",
-        "Laura (25): Kleidung kaufe ich gezielt und kombiniere kreativ."
+        "Anna (22): Ich trage, worin ich mich wohlfühle, nicht nur, was modern ist.",
+        "Lukas (23): Trends beeinflussen mich schon, aber nicht immer.",
+        "Mia (21): Mir ist wichtig, dass Kleidung nachhaltig ist."
       ]
     },
     past: {
       question: "Wie kleideten sich Menschen 1975?",
       answers: [
-        "Peter (72): Kleidung war robust und praktisch, oft repariert.",
-        "Monika (71): Man trug lange dieselben Kleidungsstücke.",
-        "Klaus (74): Kleidung wurde repariert, bevor neue gekauft wurde.",
-        "Ingrid (70): Schlicht und funktional war das Motto."
+        "Peter (72): Kleidung musste halten und praktisch sein.",
+        "Ursula (70): Man kaufte wenig und trug es jahrelang.",
+        "Karl (74): Kaputte Kleidung wurde repariert, nicht weggeworfen.",
+        "Helga (69): Mode war weniger wichtig als heute."
       ]
     }
   },
+
   medizin: {
     today: {
       question: "Wie sieht Medizin heute aus?",
       answers: [
-        "Anna (21): Hightech-Geräte, schnelle Diagnostik und digitale Lösungen.",
-        "Lukas (23): Behandlungsmethoden sind präzise und effizient.",
-        "Mia (25): Medizin ist moderner, schneller und patientenfreundlicher."
+        "Anna (22): Untersuchungen gehen schnell und wirken sehr modern.",
+        "Lukas (23): Termine bekommt man oft online, das ist praktisch.",
+        "Mia (21): Ich habe das Gefühl, Ärzte erklären heute mehr."
       ]
     },
     past: {
       question: "Wie war Medizin 1975?",
       answers: [
-        "Peter (72): Weniger Geräte, Heilung dauerte länger, alles war einfacher.",
-        "Ursula (70): Arztbesuche waren selten, Medikamente limitiert.",
-        "Karl (74): Medizin war zuverlässig, aber langsamer.",
-        "Helga (69): Geduld war oft das wichtigste bei Krankheiten."
+        "Peter (72): Es gab weniger Geräte, vieles dauerte länger.",
+        "Ursula (70): Man ging nur zum Arzt, wenn es wirklich nötig war.",
+        "Karl (74): Die Behandlung war einfacher, aber zuverlässig.",
+        "Helga (69): Geduld gehörte einfach dazu."
       ]
     }
   },
+
   traeume: {
     today: {
       question: "Welche Träume haben junge Menschen heute?",
       answers: [
-        "Sophie (22): Karriere, Reisen und Selbstverwirklichung.",
-        "Ben (24): Freiheit, Erfolg und gutes Leben.",
-        "Laura (21): Persönliche Entwicklung und Abenteuer."
+        "Anna (22): Ich möchte glücklich sein und etwas erreichen.",
+        "Lukas (23): Freiheit ist mir wichtiger als ein sicherer Job.",
+        "Mia (21): Ich will reisen und mich selbst weiterentwickeln."
       ]
     },
     past: {
       question: "Welche Träume hatten Menschen 1975?",
       answers: [
-        "Dieter (74): Sicherheit und Familie im Vordergrund.",
-        "Brigitte (71): Ein fester Job und Stabilität.",
-        "Klaus (75): Ruhiges Leben und Verlässlichkeit.",
-        "Renate (70): Gesundheit und soziale Absicherung."
+        "Peter (72): Ein sicherer Job und eine eigene Familie.",
+        "Ursula (70): Stabilität und ein ruhiges Leben.",
+        "Karl (74): Ein gutes Auskommen und Sicherheit.",
+        "Helga (69): Gesundheit und Zusammenhalt."
       ]
     }
   }
