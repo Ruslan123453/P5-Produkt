@@ -29,6 +29,9 @@
       </div>
     </div>
   </div>
+
+  <!-- QUELLEN BUTTON -->
+  <button class="back quellen-btn" onclick="openQuellen()">📚 Quellen</button>
 </section>
 
 <section id="topics" class="screen">
@@ -59,12 +62,83 @@
   <button class="back" onclick="goTopics()">← Zurück</button>
 </section>
 
-<!-- MODAL -->
+<!-- UMFRAGE MODAL -->
 <div id="surveyModal" class="modal">
   <div class="modal-content">
     <h3 id="surveyQuestion"></h3>
     <div id="surveyAnswers"></div>
     <button class="back" onclick="closeSurvey()">Schließen</button>
+  </div>
+</div>
+
+<!-- QUELLEN MODAL -->
+<div id="quellenModal" class="modal">
+  <div class="modal-content">
+    <h2>📚 Quellen</h2>
+
+    <h3>Heute</h3>
+    <ul class="quellen-list">
+      <li><strong>Arbeit:</strong> MDR – Arbeitsmigration  
+        <a href="https://www.mdr.de/wissen/bildung/arbeitsmigration-wahlergebnisse-rechte-gewalt-folgen-wirkung-studie100.html" target="_blank">Quelle</a>
+      </li>
+      <li><strong>Familie:</strong> iStock – Familie  
+        <a href="https://www.istockphoto.com/de/foto/vater-gibt-sohn-fahrt-auf-schultern-als-familie-haus-verlassen-gm905899034-249778109" target="_blank">Quelle</a>
+      </li>
+      <li><strong>Freizeit:</strong> Moskvich Mag – Soziale Medien  
+        <a href="https://moskvichmag.ru/gorod/kazhdyj-vtoroj-roditel-v-moskve-podderzhivaet-zapret-sotssetej-dlya-podrostkov-kak-predlozhil-makron/" target="_blank">Quelle</a>
+      </li>
+      <li><strong>Karte:</strong> Staumelder 24  
+        <a href="https://staumelder-24.de/" target="_blank">Quelle</a>
+      </li>
+      <li><strong>Medizin:</strong> Biermann Medizin – OP-Roboter  
+        <a href="https://biermann-medizin.de/op-roboter-hugo-kommt-erstmals-in-deutschland-in-der-urologie-zum-einsatz/" target="_blank">Quelle</a>
+      </li>
+      <li><strong>Schule:</strong> Deutschland.de – Bildung  
+        <a href="https://www.deutschland.de/ru/topic/znaniya/otlichnoe-obrazovanie" target="_blank">Quelle</a>
+      </li>
+      <li><strong>Technik:</strong> Andreae-Gymnasium  
+        <a href="https://share.google/images/B0AvLBpvw4mFktlrB" target="_blank">Quelle</a>
+      </li>
+      <li><strong>Träume:</strong> iStock – Träume  
+        <a href="https://www.istockphoto.com/de/foto/geschäftsmann-vor-gezeichnete-diagramme-auf-einer-tafel-steht-gm907849698-250071868" target="_blank">Quelle</a>
+      </li>
+      <li><strong>Währung:</strong> iStock – Euro  
+        <a href="https://www.istockphoto.com/de/foto/nachweis-euro-münze-mit-clipping-path-auf-weißem-hintergrund-gm181878973-23907819" target="_blank">Quelle</a>
+      </li>
+    </ul>
+
+    <h3>1975</h3>
+    <ul class="quellen-list">
+      <li><strong>Arbeit:</strong> DDR-Postkarten-Museum  
+        <a href="https://www.ddr-postkarten-museum.de/picture.php?/32403" target="_blank">Quelle</a>
+      </li>
+      <li><strong>Familie:</strong> Museum Digital Berlin  
+        <a href="https://berlin.museum-digital.de/object/96874" target="_blank">Quelle</a>
+      </li>
+      <li><strong>Karte:</strong> StepMap – Deutschland 1970  
+        <a href="https://www.stepmap.de/landkarte/deutschland-1970-Gzzguq0j3O-i" target="_blank">Quelle</a>
+      </li>
+      <li><strong>Kleidung:</strong> iStock – 1958  
+        <a href="https://www.istockphoto.com/de/foto/genie%C3%9Fen-sie-einen-sonnigen-tag-gm2030427677-562016823?searchscope=image%2Cfilm" target="_blank">Quelle</a>
+      </li>
+      <li><strong>Medizin:</strong> iStock – Antike Spritzen  
+        <a href="https://ru.dreamstime.com/%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82-%D0%B2%D0%B8%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D1%8B%D0%B9-%D0%B2-%D1%87%D0%B5%D1%80%D0%BD%D0%BE-%D0%B1%D0%B5%D0%BB%D0%BE%D0%BC-image292906716" target="_blank">Quelle</a>
+      </li>
+      <li><strong>Schule:</strong> Museum Digital  
+        <a href="https://nat.museum-digital.de/object/1083515" target="_blank">Quelle</a>
+      </li>
+      <li><strong>Technik:</strong> iStock – Alter Fernseher  
+        <a href="https://www.istockphoto.com/es/foto/antiguo-interior-televisor-vintage-en-el-stand-blanco-y-negro-gm1197328794-341811416" target="_blank">Quelle</a>
+      </li>
+      <li><strong>Träume:</strong> Shutterstock  
+        <a href="https://www.shutterstock.com/ru/image-photo/business-man-looking-question-mark-sketch-248636269" target="_blank">Quelle</a>
+      </li>
+      <li><strong>Währung:</strong> Wikipedia – Deutsche Mark / DDR  
+        <a href="https://de.wikipedia.org/wiki/Datei:1_mark_brd_1967_retouched.jpg" target="_blank">Quelle</a>
+      </li>
+    </ul>
+
+    <button class="back" onclick="closeQuellen()">Schließen</button>
   </div>
 </div>
 

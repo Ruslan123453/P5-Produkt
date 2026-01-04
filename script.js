@@ -296,3 +296,14 @@ function goTopics() { show("topics"); }
 document.getElementById("themeToggle").onclick = () => {
   document.body.classList.toggle("dark");
 };
+
+
+
+// ================== Источники ==================
+function openQuellen() {
+  document.getElementById("quellenModal").classList.add("active");
+}
+
+function closeQuellen() {
+  document.getElementById("quellenModal").classList.remove("active");
+}
