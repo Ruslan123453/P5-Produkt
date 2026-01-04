@@ -94,9 +94,9 @@ const surveys = {
     today: {
       question: "Wie sieht dein Schulalltag heute aus?",
       answers: [
-        "Anna (22): Fast alles läuft digital. Wir arbeiten viel mit Tablets und Online-Plattformen, das ist praktisch, aber manchmal auch anstrengend.",
-        "Lukas (23): Wir machen viele Gruppenarbeiten und Präsentationen. Das ist abwechslungsreich, aber der Leistungsdruck ist schon hoch.",
-        "Mia (21): Kein Tag ist gleich. Mal Apps, mal Diskussionen – langweilig ist es selten."
+        "Maria (17): Fast alles läuft digital. Wir arbeiten viel mit Tablets und Online-Plattformen, das ist praktisch, aber manchmal auch anstrengend.",
+        "Alina (19): Wir machen viele Gruppenarbeiten und Präsentationen. Das ist abwechslungsreich, aber der Leistungsdruck ist schon hoch.",
+        "Lukas (19): Kein Tag ist gleich. Mal Apps, mal Diskussionen – langweilig ist es selten."
       ]
     },
     past: {

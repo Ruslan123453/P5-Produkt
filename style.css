@@ -179,7 +179,7 @@ header {
 
 
 .quellen-btn {
-  position: fixed;
+  position: absolute;
   bottom: 25px;
   left: 25px;
 }
