@@ -4,85 +4,86 @@ let currentTopic = "";
 const data = {
   today: {
     gebiet: {
-      text: "Deutschland ist heute ein vereinigtes Land in der Mitte Europas und Mitglied der Europäischen Union.",
+      text: "Deutschland ist heute ein vereinigtes, demokratisches Land in der Mitte Europas. Es ist Mitglied der Europäischen Union und spielt eine wichtige politische und wirtschaftliche Rolle in Europa. Die Grenzen sind offen, Reisen und Zusammenarbeit mit anderen Ländern sind selbstverständlich.",
       img: "./images/today/karte.webp"
     },
     waehrung: {
-      text: "Heute wird in Deutschland mit dem Euro bezahlt, der in vielen europäischen Ländern gültig ist.",
+      text: "Heute wird in Deutschland mit dem Euro bezahlt. Diese gemeinsame Währung erleichtert den Handel und das Reisen innerhalb vieler europäischer Länder. Bargeld und digitales Bezahlen werden parallel genutzt.",
       img: "./images/today/waehrung.jpg"
     },
     schule: {
-      text: "Digitale Medien, Tablets, Smartboards und moderne Unterrichtsmethoden prägen den Schulalltag.",
+      text: "Der Schulalltag ist heute stark von digitalen Medien geprägt. Tablets, Computer und Smartboards unterstützen den Unterricht. Schüler arbeiten oft in Gruppen, halten Präsentationen und lernen selbstständiges Denken, was jedoch auch Leistungsdruck erzeugen kann.",
       img: "./images/today/schulen.jpg"
     },
     arbeit: {
-      text: "Viele Berufe sind digital. Homeoffice, flexible Arbeitszeiten und internationale Zusammenarbeit sind verbreitet.",
+      text: "Viele Berufe sind heute digital oder technisch orientiert. Homeoffice, flexible Arbeitszeiten und internationale Teams sind weit verbreitet. Arbeit dient nicht nur dem Einkommen, sondern auch der Selbstverwirklichung.",
       img: "./images/today/arbeit.jpg"
     },
     freizeit: {
-      text: "Streaming-Dienste, Social Media, Gaming und Reisen spielen eine große Rolle in der Freizeit.",
+      text: "In der Freizeit nutzen viele Menschen Streaming-Dienste, soziale Netzwerke und Videospiele. Gleichzeitig sind Reisen, Sport und Treffen mit Freunden wichtig. Freizeitangebote sind vielfältig und individuell.",
       img: "./images/today/freizeit.jpeg"
     },
     familie: {
-      text: "Es gibt viele verschiedene Familienmodelle, zum Beispiel Alleinerziehende, Patchwork- oder Regenbogenfamilien.",
+      text: "Heute gibt es viele unterschiedliche Familienformen, zum Beispiel Alleinerziehende, Patchwork- oder gleichgeschlechtliche Familien. Rollen innerhalb der Familie sind flexibler und stärker von Gleichberechtigung geprägt.",
       img: "./images/today/familie.jpg"
     },
     technik: {
-      text: "Smartphones, Internet, künstliche Intelligenz und moderne Technik bestimmen den Alltag.",
+      text: "Moderne Technik bestimmt den Alltag. Smartphones, Internet, künstliche Intelligenz und digitale Geräte sind ständig präsent. Technik erleichtert viele Aufgaben, beschleunigt jedoch auch das Leben.",
       img: "./images/today/technik.jpg"
     },
     kleidung: {
-      text: "Mode ist individuell, schnelllebig und wird stark von Trends und sozialen Medien beeinflusst.",
+      text: "Mode ist heute sehr individuell und stark von Trends, Influencern und sozialen Medien beeinflusst. Kleidung wird häufig neu gekauft, was zu schnellem Wandel, aber auch zu Umweltproblemen führt.",
       img: "./images/today/kleidung.jpg"
     },
     medizin: {
-      text: "Moderne Medizin nutzt Hightech-Geräte, digitale Diagnostik und neue Behandlungsmethoden.",
+      text: "Die moderne Medizin nutzt hochentwickelte Geräte, digitale Diagnostik und innovative Behandlungsmethoden. Krankheiten können schneller erkannt und besser behandelt werden, was die Lebenserwartung erhöht.",
       img: "./images/today/medizin.jpg"
     },
     traeume: {
-      text: "Viele Menschen träumen von Karriere, Reisen, Selbstverwirklichung und einem guten Lebensstandard.",
+      text: "Viele Menschen träumen heute von beruflichem Erfolg, Reisen, persönlicher Freiheit und Selbstverwirklichung. Gleichzeitig spielen finanzielle Sicherheit und Lebensqualität eine große Rolle.",
       img: "./images/today/traeume1.jpg"
     }
   },
+
   past: {
     gebiet: {
-      text: "1975 war Deutschland in zwei Staaten geteilt: die Bundesrepublik Deutschland (Westen) und die DDR (Osten).",
+      text: "Im Jahr 1975 war Deutschland in zwei Staaten geteilt: die Bundesrepublik Deutschland im Westen und die DDR im Osten. Die Teilung prägte Politik, Alltag und Lebensbedingungen der Menschen stark.",
       img: "./images/past/karte.png"
     },
     waehrung: {
-      text: "In Westdeutschland bezahlte man mit der Deutschen Mark, in der DDR mit der Mark der DDR.",
+      text: "In Westdeutschland bezahlte man mit der Deutschen Mark, in der DDR mit der Mark der DDR. Die unterschiedlichen Währungen spiegelten die politische und wirtschaftliche Trennung wider.",
       img: "./images/past/waehrung11.jpg"
     },
     schule: {
-      text: "Der Unterricht war streng, frontal und ohne digitale Technik. Disziplin spielte eine große Rolle.",
+      text: "Der Schulunterricht war streng und stark lehrerzentriert. Digitale Technik gab es nicht, Disziplin und Gehorsam waren sehr wichtig. Schüler hatten weniger Mitspracherecht als heute.",
       img: "./images/past/schule.jpg"
     },
     arbeit: {
-      text: "Viele Menschen arbeiteten in Fabriken, in der Industrie oder im Handwerk. Die Arbeit war oft körperlich anstrengend.",
+      text: "Viele Menschen arbeiteten in Fabriken, in der Industrie oder im Handwerk. Die Arbeit war oft körperlich anstrengend, aber sicher. Ein Arbeitsplatz für das ganze Leben war keine Seltenheit.",
       img: "./images/past/arbeit.jpg"
     },
     freizeit: {
-      text: "Fernsehen, Radio, Vereine und Treffen mit Freunden waren die wichtigsten Freizeitbeschäftigungen.",
+      text: "Freizeit war einfacher gestaltet. Fernsehen, Radio, Vereinsleben und persönliche Treffen standen im Mittelpunkt. Digitale Unterhaltung existierte nicht.",
       img: "./images/past/freizeit2.webp"
     },
     familie: {
-      text: "Die Familie hatte meist eine klassische Rollenverteilung: der Mann arbeitete, die Frau kümmerte sich um Haushalt und Kinder.",
+      text: "Die Familie folgte meist einer klassischen Rollenverteilung: Der Mann arbeitete, die Frau kümmerte sich um Haushalt und Kinder. Die Familie war der zentrale Mittelpunkt des Lebens.",
       img: "./images/past/familie.jpg"
     },
     technik: {
-      text: "Es gab kaum Elektronik, keine Computer und kein Internet. Technik war einfach und langlebig.",
+      text: "Technik war einfach und langlebig. Es gab keine Computer, kein Internet und kaum elektronische Geräte. Viele Tätigkeiten wurden manuell erledigt.",
       img: "./images/past/technik.jpg"
     },
     kleidung: {
-      text: "Kleidung war praktisch, robust und wurde oft lange getragen oder repariert.",
+      text: "Kleidung war funktional, robust und wurde lange getragen. Reparieren statt Wegwerfen war normal, Mode änderte sich nur langsam.",
       img: "./images/past/kleidung.jpg"
     },
     medizin: {
-      text: "Die medizinische Versorgung war einfacher. Es gab weniger moderne Geräte und längere Heilungszeiten.",
+      text: "Die medizinische Versorgung war deutlich einfacher als heute. Es gab weniger Medikamente und technische Geräte, weshalb Behandlungen und Heilungen oft länger dauerten.",
       img: "./images/past/medizin.jpg"
     },
     traeume: {
-      text: "Viele Menschen träumten von Sicherheit, einer festen Arbeit, einer Familie und einem ruhigen Leben.",
+      text: "Viele Menschen träumten von einem sicheren Arbeitsplatz, einer eigenen Familie und einem ruhigen, stabilen Leben. Materielle Sicherheit stand im Vordergrund.",
       img: "./images/past/traeume1.jpg"
     }
   }
