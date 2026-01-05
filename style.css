@@ -171,16 +171,6 @@ header {
   font-size: 18px;
 }
 
-@keyframes dropDown {
-  from {
-    top: -80px;
-    opacity: 0;
-  }
-  to {
-    top: calc(100vh - 90px);
-    opacity: 1;
-  }
-}
 
 
 
@@ -221,21 +211,3 @@ header {
 
 
 
-@media (max-width: 600px) {
-  .quellen-btn {
-    left: 50%;
-    transform: translateX(-50%);
-    animation: dropDownMobile 0.9s ease forwards;
-  }
-
-  @keyframes dropDownMobile {
-    from {
-      top: -80px;
-      opacity: 0;
-    }
-    to {
-      top: calc(100vh - 100px);
-      opacity: 1;
-    }
-  }
-}
