@@ -178,17 +178,11 @@ header {
 
 
 
-
 .quellen-btn {
-  position: fixed;
-  top: 20px;
+  position: absolute;
+  bottom: 25px;
   left: 25px;
-  z-index: 1000;
-  animation: dropDown 1.0s ease forwards;
 }
-
-
-
 
 .quellen-list {
   text-align: left;
@@ -205,9 +199,3 @@ header {
   color: var(--accent);
   text-decoration: none;
 }
-
-
-
-
-
-
