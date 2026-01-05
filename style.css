@@ -130,7 +130,7 @@ header {
 /* ===== BUTTONS ===== */
 .back {
   margin-top: 40px;
-  padding: 16px 28px;
+  padding: 16px 0px;
   border: none;
   border-radius: 18px;
   background: var(--card);
