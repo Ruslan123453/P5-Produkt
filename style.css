@@ -24,6 +24,7 @@ body {
   transition: 0.4s;
 }
 
+/* ===== HEADER ===== */
 header {
   display: flex;
   justify-content: space-between;
@@ -38,7 +39,7 @@ header {
   cursor: pointer;
 }
 
-/* SCREENS */
+/* ===== SCREENS ===== */
 .screen {
   display: none;
   padding: 40px 20px;
@@ -49,7 +50,7 @@ header {
   animation: fadeIn 0.6s ease;
 }
 
-/* START */
+/* ===== START ===== */
 .hero {
   max-width: 900px;
   margin: auto;
@@ -82,7 +83,7 @@ header {
   box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 
-/* TOPICS */
+/* ===== TOPICS ===== */
 .topics-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -90,7 +91,6 @@ header {
   max-width: 800px;
   margin: 30px auto;
 }
-
 
 .topic {
   background: var(--card);
@@ -103,7 +103,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .topic:hover {
@@ -112,7 +112,7 @@ header {
   transform: scale(1.05);
 }
 
-/* CONTENT */
+/* ===== CONTENT ===== */
 #content {
   max-width: 700px;
   margin: auto;
@@ -127,57 +127,64 @@ header {
   box-shadow: 0 15px 40px rgba(0,0,0,0.2);
 }
 
+/* ===== BUTTONS ===== */
 .back {
   margin-top: 40px;
-  padding: 16px 28px;        /* больше */
+  padding: 16px 28px;
   border: none;
   border-radius: 18px;
   background: var(--card);
   cursor: pointer;
-  min-height: 64px;          /* важно для iPad */
+  min-height: 64px;
   font-size: 18px;
   font-weight: 500;
   color: var(--text);
 }
 
-/* ANIMATION */
+/* ===== ANIMATION ===== */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.modal{
-  display:none;
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,0.6);
-  justify-content:center;
-  align-items:center;
-  z-index:999;
+/* ===== MODAL ===== */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
 }
-.modal.active{display:flex;}
-.modal-content{
-  background:var(--card);
-  padding:30px;
-  border-radius:20px;
-  max-width:600px;
-  width:90%;
-  max-height:80vh;
-  overflow-y:auto;
+
+.modal.active {
+  display: flex;
 }
+
+.modal-content {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
 .answer {
   margin-bottom: 12px;
   text-align: left;
   font-size: 18px;
 }
 
-
-
-
-
-
-
-
+/* ===== SOURCES (QUELLEN) ===== */
 .quellen-btn {
   position: absolute;
   bottom: 25px;
@@ -198,4 +205,8 @@ header {
   margin-left: 8px;
   color: var(--accent);
   text-decoration: none;
+}
+
+.quellen-list a:hover {
+  text-decoration: underline;
 }
